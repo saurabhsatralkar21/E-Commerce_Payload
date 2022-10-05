@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Shop Spirits</title>
+	<style type="text/css">
+		.hidden {
+			display: none;
+			visibility: hidden;
+		}
+
+		.visible {
+			display: block;
+			visibility: visible;
+		}
+	</style>
+
+</head>
+<body>
+	<div id="main-body">
+		<ol id="main-menu">
+		    <li class="selected">Shop Spirits</li>
+		    <li>Shop Bourbon</li>
+		    <li>Shop Scotch</li>
+		    <li>Shop Rum</li>
+		</ol>
+
+		<div id="age-verification">
+			<div class="popup-text">
+				To continue input your age:
+			</div>
+			<input type="number" id="input-age" name="input-age" min="21" max="99">
+			<div class="hidden" id="alert-text"></div>
+			<button class="confirm" onclick="handleAgeInput({}, this)">Confirm</button>
+		</div>
+
+		<div id="product-listing" class="hidden">
+			<div>
+				<img src="img1.jpg">
+				<div class="description">Lagavulin 16 Year Old</div>
+				<button class="add-to-cart" data-product-id="1" data-product-title="Lagavulin 16 Year Old" data-category="Scotch">Add To Cart</button>
+			</div>
+			<div>
+				<img src="img2.jpg">
+				<div class="description">Ardbeg</div>
+				<button class="add-to-cart" data-product-id="10" data-product-title="Ardbeg" data-category="Scotch">Add To Cart</button>
+			</div>
+			<div>
+				<img src="img3.jpg">
+				<div class="description">The Glenlivet 18 Year Old</div>
+				<button class="add-to-cart" data-product-id="45" data-product-title="The Glenlivet 18 Year Old">Add To Cart</button>
+			</div>
+			<div>
+				<img src="img4.jpg">
+				<div class="description">El Dorado 21 Year Old Special Reserve</div>
+				<button class="add-to-cart" data-product-id="99" data-product-title="El Dorado 21 Year Old Special Reserve" data-category="Rum">Add To Cart</button>
+			</div>
+		</div>
+	</div>
+
+	<div id="main-footer">
+		<ol id="footer-menu">
+		    <li>Contact</li>
+		    <li>Terms and conditions</li>
+		    <li>Privacy policy</li>
+		    <li>Shipping information</li>
+		</ol>
+	</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
